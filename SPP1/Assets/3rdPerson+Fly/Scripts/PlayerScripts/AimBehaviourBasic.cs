@@ -13,6 +13,10 @@ public class AimBehaviourBasic : GenericBehaviour
 	private int aimBool;                                                  // Animator variable related to aiming.
 	private bool aim;                                                     // Boolean to determine whether or not the player is aiming.
 
+
+
+
+
 	// Start is always called after any Awake functions.
 	void Start ()
 	{
