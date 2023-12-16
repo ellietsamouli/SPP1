@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class KnockOutObject : MonoBehaviour
+public class ShootAttack : MonoBehaviour
 {
     public Animator playerAnimator;
     public GameObject cubePrefab;
@@ -15,7 +15,7 @@ public class KnockOutObject : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && !isShooting)
         {
-          //  Debug.Log("E key pressed");
+            Debug.Log("E key pressed");
 
             // Trigger the animation and instantiate the cube with delays
             StartCoroutine(ShootWithDelays());
@@ -41,7 +41,7 @@ public class KnockOutObject : MonoBehaviour
 
     private void InstantiateCube()
     {
-        //Debug.Log("Instantiating cube");
+        Debug.Log("Instantiating cube");
 
         // Instantiate a cube
         GameObject cube = Instantiate(cubePrefab, transform.position, Quaternion.identity);
@@ -55,7 +55,5 @@ public class KnockOutObject : MonoBehaviour
         // Destroy the cube after a certain amount of time
         Destroy(cube, disappearanceDelay);
     }
-
-
 
 }

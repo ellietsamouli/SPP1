@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Shooting : GenericBehaviour
+public class ShootingAnim : GenericBehaviour
 {
 	public string shootButton = "Shoot";              // Default  button.
 	private int shootBool;                          // Animator variable related to flying.

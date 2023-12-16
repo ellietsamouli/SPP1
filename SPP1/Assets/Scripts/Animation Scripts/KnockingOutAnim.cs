@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KnockingOut : GenericBehaviour
+public class KnockingOutAnim : GenericBehaviour
 {
 	public string knockOutButton = "KnockOut";              
 	private int knockOutBool;                          

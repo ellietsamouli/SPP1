@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewBehaviourScript : GenericBehaviour
+public class PartingAnim : GenericBehaviour
 {
 	public string partingButton = "Parting";
 	private int partingBool;

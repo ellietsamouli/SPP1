@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class ShootingScript : MonoBehaviour
+public class KnockOutCubeScript : MonoBehaviour
 {
     public Animator playerAnimator;
     public GameObject cubePrefab;

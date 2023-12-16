@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrowBullet : MonoBehaviour
+public class ThrowingArrow : MonoBehaviour
 {
     public Transform socket;
     public GameObject bulletPrefab;
