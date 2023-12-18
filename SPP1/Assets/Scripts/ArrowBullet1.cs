@@ -13,17 +13,9 @@ public class ArrowBullet1 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Check if the collided object is not the bullet itself
-        if (collision.gameObject != gameObject)
-        {
-            Destroy(collision.gameObject); // Destroy the collided object (assuming it's not the bullet)
-        }
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
 
-        // Check if the bullet is not colliding with the character
-        if (!collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject); // Destroy the bullet
-        }
     }
 
 
